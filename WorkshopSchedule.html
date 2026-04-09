@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High and Ultra-high Resolution Modeling of the Earth System – Workshop Schedule</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    color: #222;
+    background: #fff;
+    line-height: 1.45;
+  }
+  h1 {
+    text-align: center;
+    color: #1F3864;
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+  h2.subtitle {
+    text-align: center;
+    color: #1F3864;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-weight: normal;
+  }
+  h2.day {
+    color: #2E5090;
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #2E5090;
+    padding-bottom: 4px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 14px;
+    table-layout: fixed;
+  }
+  th, td {
+    border: 1px solid #bbb;
+    padding: 8px 10px;
+    vertical-align: top;
+    text-align: left;
+  }
+  th {
+    background: #2E5090;
+    color: #fff;
+    font-weight: bold;
+  }
+  col.time-col { width: 12%; }
+  col.speaker-col { width: 25%; }
+  col.title-col { width: 63%; }
+  tr.session-row td {
+    background: #D6E4F0;
+    font-weight: bold;
+    color: #1F3864;
+    font-size: 15px;
+  }
+  tr.break-row td {
+    background: #F2F2F2;
+    color: #555;
+  }
+  tr.discussion-row td {
+    background: #FFF2CC;
+    color: #7F6000;
+  }
+  .led-by {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 3px;
+    color: #7F6000;
+  }
+  .time { white-space: nowrap; font-family: monospace; font-size: 14px; }
+  .name { font-weight: bold; }
+  .affil { font-style: italic; font-size: 12px; color: #555; margin-top: 2px; }
+  details {
+    cursor: pointer;
+  }
+  details summary {
+    font-style: italic;
+    color: #1F3864;
+    list-style: none;
+    padding: 2px 0;
+    position: relative;
+    padding-left: 18px;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 12px;
+    color: #666;
+    transition: transform 0.15s;
+    display: inline-block;
+  }
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+  details summary:hover {
+    color: #2E5090;
+    text-decoration: underline;
+  }
+  .abstract-box {
+    margin: 10px 0 4px 18px;
+    padding: 12px 14px;
+    background: #F8FAFC;
+    border-left: 3px solid #2E5090;
+    border-radius: 2px;
+    font-style: normal;
+    font-size: 13px;
+    color: #333;
+  }
+  .authors {
+    margin-bottom: 8px;
+    color: #444;
+  }
+  .abstract-text p {
+    margin: 0 0 8px 0;
+    text-align: justify;
+  }
+  .abstract-text p:last-child { margin-bottom: 0; }
+  .note {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin: 4px 0 20px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+  <h1>High and Ultra-high Resolution Modeling of the Earth System</h1>
+  <h2 class="subtitle">Workshop Schedule</h2>
+  <p class="note">Click a presentation title to view the full abstract.</p>
+
+  <h2 class="day">Monday (April 13)</h2>
+  <table>
+    <colgroup><col class="time-col"><col class="speaker-col"><col class="title-col"></colgroup>
+    <tr class="header-row"><th>Time</th><th>Speaker</th><th>Presentation Title</th></tr>
+    <tr class="break-row"><td colspan="3"><em>9:00 – 9:10  Introduction</em></td></tr><tr class="session-row"><td colspan="3">Session 1: Ultra-high resolution modeling I</td></tr>
+    <tr class="talk-row">
+      <td class="time">9:10</td>
+      <td class="speaker"><div class="name">Peter Caldwell</div><div class="affil">LLNL</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>E3SM Model’s Vision for a High-Resolution Future</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Peter Caldwell</div>
+            <div class="abstract-text"><p>It has been several years since the Simple Cloud Resolving E3SM Atmosphere Model (SCREAM) was released. In this time we have learned a lot about what km-scale global models can and can’t do. The E3SM project now aims to reproduce SCREAM’s success by porting its ocean model to C++ as well (with conversion of other components planned). By leveraging GPU resources, E3SM is aiming for a default resolution of ~10 km in its upcoming v4 release. Lower resolution than SCREAM’s 3 km is needed to bridge the large gap between being able to run a few simulations and the testing/tuning needed for a CMIP-class model release. We are also finding that data compression is needed to avoid an output bottleneck and that machine-learning emulation is a  promising but challenging way to enable large ensembles of long global km-scale simulations.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">9:40</td>
+      <td class="speaker"><div class="name">Falko Judt</div><div class="affil">NSF NCAR</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>A New Frontier in Weather Prediction: Real-Time Global Kilometer-Scale Forecasts Using the Model for Prediction Across Scales (MPAS)</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Falko Judt, Craig Schwartz, Ryan Johnson</div>
+            <div class="abstract-text"><p>We report on an unprecedented achievement in real-time, global, kilometer-scale numerical weather prediction (NWP) model forecasts, marking both a computational milestone and a new frontier in the field. From 26 April to 30 May 2025, and again from 1 September to 6 October 2025, the NSF NCAR Model for Prediction Across Scales (MPAS) generated daily global forecasts. During the first period, forecasts extended to 2.5 days at 3 km uniform horizontal cell spacing; during the second period, forecasts extended to 5 days at 3.75 km uniform horizontal cell spacing. These two forecast demonstrations aimed to assess the advantages of global convection-permitting resolution for simulating multiscale weather systems—such as convective storms, tropical cyclones, and other relevant weather phenomena—and to produce and disseminate output with the requisite speed to support an operational daily forecasting workflow.</p><p>We document this significant modeling effort, highlight its noteworthy aspects, and discuss the future prospects and challenges of global kilometer-scale NWP. The forecast performance during the fall 2025 demonstration was specifically evaluated, focusing on tropical cyclone track and intensity, as well as non-tropical cyclone rainfall associated with tropical waves and other transient systems. Despite employing an untuned, default configuration, the MPAS forecasts achieved performance comparable to NOAA’s operational GFS for tropical cyclone track prediction and reduced intensity errors by approximately 25%. These results emphasize the potential of global kilometer-scale models to significantly improve tropical cyclone forecasting and mitigate persistent biases found in current global prediction systems. Furthermore, case studies of several high-impact weather events worldwide consistently demonstrated that MPAS often provided valuable guidance.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">10:00</td>
+      <td class="speaker"><div class="name">Julio Bacmeister</div><div class="affil">NSF NCAR</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Stratospheric small-scales at 14km and 3.75km resolution</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Julio Bacmeister, Adam Herrington</div>
+            <div class="abstract-text"><p>This presentation will show results from analyses of stratospheric small-scale variability in global 14km and 3.75 km simulations conducted with CESM.  The 14-km simulations is conducted with the spectral element SE dynamical core while the 3.75 km simulations use the MPAS dynamical core.  The results reveal a surprising amount similarity between the monthly climatology of momentum fluxes in the 3.75km and 14km simulations outside of the tropics.   In the tropics we find the resolved momentum flux in 3.75 km simulations depends critically on how deep convection is represented in the simulation. Two different 40-day 3.75km simulations are analyzed one with no deep convection scheme (NODEEP-3km) and one with a spectrum of stochastic mass-flux plumes incorporated in CAM’s PBL scheme (CLUBBMF-3km). We find that resolved momentum in NODEEP-3km is substantially higher than in CLUBBMF-3km. It is unclear at the moment which of the two runs is more realistic in this aspect. However, CLUBBMF-3km appears more realistic in other measures of small-scale convective structure.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="break-row"><td colspan="3"><em>10:20 – 10:40  Coffee Break</em></td></tr><tr class="session-row"><td colspan="3">Session 2: Ultra-high resolution modeling II</td></tr>
+    <tr class="talk-row">
+      <td class="time">10:40</td>
+      <td class="speaker"><div class="name">Christiane Jablonowski</div><div class="affil">University of Michigan</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>NSF StormSPEED: Enabling Kilometer-Scale Earth System Simulations in CESM3</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Christiane Jablonowski, Nicholas Forcone, Nicholas H. Androski, Gokhan Danabasoglu, Peter H. Lauritzen, John Truesdale, Jian Sun, Brian Medeiros, Thomas Hauser, Sheri Voelz, Falko Judt, Xue Liu, Dan Fu, Ping Chang, R. Saravanan, and Mark A. Taylor</div>
+            <div class="abstract-text"><p>Ultra-high- and high-resolution Earth system models (ESMs) with grid spacings of ~1–30 km are essential for capturing cross-scale interactions and for representing local-to-regional phenomena such as deep convection, orographically forced precipitation, Mesoscale Convective Systems (MCSs), and tropical cyclones (TCs). These events not only drive high-impact regional weather but also feed back onto the large-scale circulation.</p><p>This presentation overviews the NSF-funded Storm-Resolving SPEctral Element Dycore (StormSPEED) project for the Community Earth System Model (CESM). StormSPEED’s goal is to enable the CESM community to run nonhydrostatic, computationally efficient, kilometer-scale Earth system simulations in CESM3, the next-generation flagship ESM of NSF NCAR. We achieve this by integrating the nonhydrostatic Spectral Element dynamical core (SE-NH) from the U.S. Department of Energy’s “Energy Exascale Earth System Model” (E3SM) into CESM’s Community Atmosphere Model (CAM).</p><p>We report on the current status of the SE-NH integration, summarize key science drivers, and present performance results for CAM–SE-NH on both CPU- and GPU-based platforms. We also showcase early simulation results spanning a range of resolutions and levels of physical complexity, including idealized dry and moist test cases developed for the Dynamical Core Model Intercomparison Project (DCMIP). Finally, we highlight lessons learned and selected outcomes from the DCMIP-2025 summer school, which introduced the CESM3–SE-NH (StormSPEED) configuration to a broad user community.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">11:10</td>
+      <td class="speaker"><div class="name">Erin Dougherty</div><div class="affil">NSF NCAR</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Tropical Rainfall Extremes Simulated by MPAS in a Current and Future Climate</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Erin Dougherty, Kelly Nunez Ocasio, Kwesi Quagraine, Antonio Ruiz Núñez, Andreas Prein, Paul O’Gorman</div>
+            <div class="abstract-text"><p>The tropical Atlantic and Mesoamerica regions are frequently impacted by rainfall extremes due to interactions between the ocean, complex topography, island-scale processes, and synoptic and planetary scale drivers. Large-scale drivers include the Intertropical Convergence Zone (ITCZ) and North Atlantic Subtropical High (NASH) that dictate moisture convergence, while complex terrain and sea breezes influence local rainfall patterns. A variety of storms including hurricanes, mesoscale convective systems (MCSs), and isolated thunderstorms frequently occur, predominantly in the rainy seasons in April-June and August-November.</p><p>Given the multi-scale interactions and complexity of this region, the Mesoamerica Affinity Group (MAAG) was developed to bring researchers together studying these topics and to advance science in this region by running convection-permitting simulations. A key output of MAAG are two simulations of Hurricane Maria (2017)- one in a current climate and one in a future climate-using the Model for Prediction Across Scales-Atmosphere (MPAS-A) with a 15-km to 3-km mesh. The current climate simulations compare well to observations, while future simulations show distinct changes in Hurricane Maria under warmer and moister future conditions. In separate MPAS simulations at 3-km grid spacing driven by MESACLIP data, we focus on future changes to rainfall extremes over Puerto Rico to highlight the local impacts of future warming on rainfall.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">11:40</td>
+      <td class="speaker"><div class="name">Kwesi Twentwewa Quagraine</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Could Hurricane Maria Have Intensified Further? Insights from Climate Dynamics and Modeling</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Kwesi T. Quagraine, Antonio Ruiz Nunez, Zachary L. Moon, Erin M. Dougherty, and Kelly M. Nunez Ocasio</div>
+            <div class="abstract-text"><p>As global mean surface temperatures increase, the characteristics of extreme weather events are projected to change, with important implications for tropical cyclone (TC) dynamics and thermodynamics. In this study, we assess the ability of the Model for Prediction Across Scales–Atmosphere (MPAS-A) to simulate a TC case relative to observations and under pseudo–global warming conditions. Hurricane Maria, a devastating Category 5 hurricane that impacted the Caribbean region in September 2017, is used as a case study to evaluate model performance under present-day (CTRL) and pseudo-global warming (PGW) scenarios. Our results show that MPAS-A captures the overall propagation direction of Hurricane Maria but underestimates its latitude prior to recurvature. Although the model does not reproduce the observed point-by-point storm track, it represents the large-scale environmental conditions governing TC evolution comparable to observations. Analysis of the North Atlantic Subtropical High (NASH) indicates that MPAS-A simulates a weaker NASH, which likely contributes to the equatorward bias in the simulated recurvature latitude. Under PGW conditions, Hurricane Maria follows a substantially different trajectory. Despite a shorter lifetime and more rapid intensification and decay, the PGW simulation produces a higher lifetime maximum precipitation than the CTRL case, highlighting the sensitivity of TC tracks, intensity evolution, and precipitation to a warming climate. Our analyses of the moist static energy budget show that latent heat changes contribute the most to differences in energy of Hurricane Maria under PGW.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="break-row"><td colspan="3"><em>12:00 – 1:30  Lunch</em></td></tr><tr class="session-row"><td colspan="3">Session 3: Ultra-high resolution modeling III</td></tr>
+    <tr class="talk-row">
+      <td class="time">1:30</td>
+      <td class="speaker"><div class="name">Lucas Harris</div><div class="affil">NOAA GFDL</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Results from the GFDL FV3 &amp; SHiELD model</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Lucas Harris</div>
+            <div class="abstract-text"><p>I will share recent results from the GFDL FV3 &amp; SHiELD team. This will include the 6.5-km SHiELD and the 3.25-km X-SHiELD, highlighting a new 11-year AMIP simulation from the latter. I will also discuss our 3-km global-nested C-SHiELD and T-SHiELD prediction models. The results will demonstrate the value of the unified SHiELD system in maintaining high-quality global states while effectively representing storm-scale features, particularly extreme events. Finally, I will discuss our progress toward coupled SHiELD and sub-kilometer multi-nested T-SHiELD, allowing the GFDL Seamless Modeling Suite to fully span the earth system from planetary to eddy scales.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">2:00</td>
+      <td class="speaker"><div class="name">Benjamin Hillman</div><div class="affil">Sandia National Laboratories</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Decadal simulations at storm resolving scales: results from SCREAMv1</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Benjamin Hillman</div>
+            <div class="abstract-text"><p>Recent advances in high-performance computing have enabled the development of global storm-resolving models (GSRMs) with kilometer-scale grid spacing, offering the potential to explicitly simulate deep convection and better represent extreme weather. However, most existing GSRM studies have been limited to relatively short simulations (weeks to months), restricting the ability to assess climatology and the statistics of extreme events. Here we present results from a decade-long global simulation using the SCREAMv1 atmosphere model at approximately 3-km grid spacing, performed on the Frontier supercomputer. To our knowledge, this simulation represents one of the longest integrations to date with a global nonhydrostatic storm-resolving model.</p><p>We evaluate the simulation against satellite observations, reanalysis products, and the conventionally-parameterized E3SMv3 atmosphere model. We find that many large-scale climatological biases in SCREAMv1 are comparable to those found in CMIP6-class models, while the explicit treatment of convection improves the representation of extreme rainfall rates. Analysis of tropical variability reveals realistic Kelvin wave activity but a weak Madden–Julian Oscillation (MJO), suggesting deficiencies in cloud-radiative feedbacks and convective organization. Sensitivity experiments indicate that cold-pool processes and associated surface flux feedbacks play an important role in enabling large-scale convective organization. The unprecedented length of this simulation also enables a statistically robust evaluation of extreme phenomena, such as tropical cyclones and mesoscale convective systems. Our results confirm the intuitive result that kilometer-scale resolution improves the representation of intense storms relative to coarse-resolution models.</p><p>These results illustrate both the promise and remaining challenges of global storm-resolving climate simulations and highlight the value of multi-year integrations for evaluating extremes and tropical variability.</p><p>[SNL is managed and operated by NTESS under DOE NNSA contract DE-NA0003525. This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the paper do not necessarily represent the views of the U.S. Department of Energy or the United States Government.]</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="break-row"><td colspan="3"><em>2:20 – 2:40  Coffee Break</em></td></tr><tr class="session-row"><td colspan="3">Session 4: Regional Refinement</td></tr>
+    <tr class="talk-row">
+      <td class="time">2:40</td>
+      <td class="speaker"><div class="name">Mark Taylor</div><div class="affil">Sandia National Laboratories</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>SCREAM with regional refinement down to 100 m resolution</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Mark Taylor (SNL), Jishi Zheng, W. Hannah, P. Bogenschutz (LLNL), V. Mahadevan (ANL)</div>
+            <div class="abstract-text"><p>I&#x27;ll describe recent work pushing the E3SM global atmospheric model to</p><p>large-eddy simulation scales.  We use the regionally refined mesh</p><p>(RRM) capability of the Simple Cloud-Resolving E3SM Atmosphere Model</p><p>(SCREAM).  We run SCREAM with a single RRM mesh spanning resolutions</p><p>from 100 m over the San Francisco Bay area up to 100 km resolution</p><p>over most of the globe.  SCREAM behaves well in the 100 m region,</p><p>substantially improving several biases compared to a baseline global</p><p>3.25 km simulation.  I&#x27;ll describe two numerical improvements that</p><p>were needed to handle this unprecedented 1000x level of refinement in</p><p>a single grid: A resolution-aware sponge layer and resolution aware</p><p>topography generation including surface roughness data sets.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">3:10</td>
+      <td class="speaker"><div class="name">Nicholas Forcone</div><div class="affil">University of Michigan</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Kilometer-Scale Hindcast Simulations of Derecho Events with Nonhydrostatic CESM3</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Nicholas Forcone, Christiane Jablonowski, Nicholas Androski, Adam Herrington, John Truesdale, Jian Sun, Peter Lauritzen, and NSF StormSPEED Team</div>
+            <div class="abstract-text"><p>The NSF-funded Storm-resolving SPEctral Element Dycore (StormSPEED) Project will soon permit global, kilometer-scale, nonhydrostatic CESM3 simulations that can explicitly resolve some mesoscale phenomena including Mesoscale Convective Systems (MCSs). This presentation will highlight successes and current limitations of StormSPEED at the kilometer scale with two variable resolution hindcast simulations of meteorologically distinct derecho events in the Midwestern U.S. StormSPEED simulations of the December 2021 Midwest Derecho, with strong large-scale forcing in place, resembles the observed progression and captures embedded small-scale regions of intense precipitation. By contrast, StormSPEED simulations of the August 2020 Midwest Derecho, with weak large-scale forcing in place, fail to produce convective organization similar to observations of the event. This presentation will shed light on sensitivities to physical parameterizations and large-scale forcing when simulating down to the kilometer scale.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="break-row"><td colspan="3"><em>3:30 – 5:00  Poster Session &amp; Reception</em></td></tr>
+  </table>
+
+  <h2 class="day">Tuesday (April 14)</h2>
+  <table>
+    <colgroup><col class="time-col"><col class="speaker-col"><col class="title-col"></colgroup>
+    <tr class="header-row"><th>Time</th><th>Speaker</th><th>Presentation Title</th></tr>
+    <tr class="session-row"><td colspan="3">Session 5: Clouds, Aerosols, and the Water Cycle</td></tr>
+    <tr class="talk-row">
+      <td class="time">9:00</td>
+      <td class="speaker"><div class="name">Jiwen Fan</div><div class="affil">Argonne National Laboratory</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Appropriate cloud microphysics and aerosol-cloud interaction parameterizations for ultra-high resolution (&lt; 3 km) models</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Jiwen Fan</div>
+            <div class="abstract-text"><p>Accurately representing convective clouds and precipitation remains one of the largest sources of uncertainty in Earth system models, even using ultra-high (&lt; 3 km) model resolutions. Large inter-model spread persists in simulations of convective intensity, precipitation, cloud microphysical properties, even in the models with changes in cloud microphysical parameterization only. Different microphysics parameterizations often lead to opposite aerosol impacts on convection and precipitation. All these reflect the fundamental uncertainties in representing cloud microphysics and aerosol–cloud interactions (ACI).</p><p>A key problem lies in poor cloud microphysics and ACI  parameterizations although dynamic processes are much better represented with ultra-high resolutions. Many models inherit these parameterizations from coarse-resolution models, for example, saturation adjustment is employed to treat condensation and evaporation, which is breaks down at the ultra-high scale as supersaturation can be high in resolved convective updrafts, thus all phase conversion processes in cloud microphysics can be misrepresented. This presentation will examine how these uncertainties arise and how they can be reduced through improved parameterizations in aerosol activation, condensation and evaporation, and ice microphysical processes. Building on these insights, we discuss strategies for improving microphysical and aerosol–cloud interaction parameterizations for next-generation ultra-high Earth system models. Such improvements are essential to reduce model uncertainty in simulating clouds, weather, and climate at ultra-high resolutions.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">9:30</td>
+      <td class="speaker"><div class="name">Weiyi Wang</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Effects of plume rise on long-range transport of wildfire aerosols and Arctic clouds using the Multi-Scale Infrastructure for Chemistry and Aerosols (MUSICAv0) model View Presentation Add to Schedule</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Weiyi Wang, Xiaohong Liu, Zheng Lu, Wenfu Tang and Louisa K Emmons</div>
+            <div class="abstract-text"><p>Wildfires release biomass burning aerosols (BBA) and gases, impacting atmospheric composition, air quality, and climate. Despite the importance of injection height for the transport and lifetime of BBA, most global climate models do not estimate the profiles of BBA emissions interactively. In this study, a one-dimensional fire plume-rise model (Freitas et al., 2007) is incorporated in the NCAR Community Earth System Model version 2 (CESM2) to replace BBA emissions at surface in the default CESM2 model. The injection height calculation is based on the modeled thermodynamic conditions (e.g., temperature, pressure, and air density) and satellite observed fire sizes and heat fluxes. In addition to surface emission and plume-rise model, fixed height injections are tested to examine the impact of dynamic variability of wildfire emissions. We examine the plume-rise effects of BBA and gas emissions on aerosol properties and air quality using the variable-resolution configuration of the Multi-Scale Infrastructure for Chemistry and Aerosols Version 0 (MUSICAv0) in CESM2.2.2, which refines to the resolution at ∼14 km over the conterminous U.S., boreal North American and boreal Asia. We compare the model simulations with the observations obtained during the WE-CAN (Western wildfire Experiment for Cloud chemistry, Aerosol absorption and Nitrogen) and FIREX-AQ (Fire Influence on Regional to Global Environments and Air Quality) field campaigns. Overall, implementing the plume-rise model improves model agreement with observations such as aircraft measurements of carbonaceous aerosol profiles for FIREX-AQ and WE-CAN and satellite retrieved aerosol optical depth. Plume rise also greatly enhances modeled long-range downstream transport of aerosols during periods of large wildfires. Higher injection height from the plume-rise model strengthens trans-Arctic transport of BBAs and increases cloud droplet number concentrations and low-cloud cover over northern high latitudes, which further affects surface radiation budget, Arctic temperature, and sea-ice loss.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">9:50</td>
+      <td class="speaker"><div class="name">Lulin Xue</div><div class="affil">NSF NCAR</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Advancing knowledge and applications for the regional water cycle: summary of convection-permitting regional climate simulations conducted and supported by the NSF NCAR Water Systems Program</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Lulin Xue and Ethan Gutmann</div>
+            <div class="abstract-text"><p>The Water Systems Program (WSP) is a NCAR-wide cross-lab program including teams from RAL, MMM, CGD, EOL, ACOM, and CISL with its inception in early 2000. The main goal of the WSP is to improve understanding of the current water cycle and its likely evolution in a future climate. To address this grand question, NCAR scientists worked with the broad community closely in the area of global analysis of the water cycle in climate models, regional high resolution climate simulations, observations collection and analysis, development/improvement of land-surface/hydrology processes in community models, and AI/ML applications using high-resolution model data. Through ~20 years of research and development efforts, WSP generated and developed multiple regional high-resolution long-term model datasets and modeling tools for the community and cultivated a few national and international research communities (e.g., SAAG, MAAG, and H2US).</p><p>This presentation will introduce a series of convection-permitting regional climate simulation datasets produced by the WSP. The ongoing research efforts, future directions, and collaborations with the broad community will be discussed as well.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="break-row"><td colspan="3"><em>10:10 – 10:20  Coffee Break</em></td></tr><tr class="session-row"><td colspan="3">Session 6: Climate Change at High-Resolution</td></tr>
+    <tr class="talk-row">
+      <td class="time">10:20</td>
+      <td class="speaker"><div class="name">Dan Fu</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Improved Representation of Convective Organization Enhances Extreme Precipitation Simulations in High-Resolution CESM</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Dan Fu, Ping Chang, Xue Liu, Frederic S Castruccio, Andreas F Prein, Gokhan Danabasoglu, Julio Bacmeister</div>
+            <div class="abstract-text"><p>Extreme precipitation events, driven by complex multi-scale atmospheric dynamics and enhanced by increased moisture availability, are projected to intensify in the near-term future, posing escalating risks to societies and infrastructure worldwide. However, most IPCC-class Earth System Models (ESMs) operate at coarse horizontal resolutions (~1°) that cannot adequately represent organized convection, including mesoscale convective systems (MCSs) and their associated multiscale interactions, limiting our confidence in understanding their long-term variability and future changes. Here we present results from a suite of high-resolution simulations using the High-Resolution Community Earth System Model (CESM-HR; ~0.25° atmosphere/land and ~0.1° ocean/sea ice) under the MESACLIP project. Compared with standard low-resolution CESM (CESM-LR), CESM-HR substantially improves the representation of organized convection, MCS statistics, and associated multi-scale dynamics. Globally, CESM-HR more accurately reproduces the spatial distribution, intensity spectrum, and frequency of extreme daily precipitation over land, reducing long-standing biases linked to unresolved convective organization in CESM-LR, primarily due to the improvement in resolved convections. Over the conterminous United States (CONUS), evaluation against multisource observations and 4-km convection-permitting simulations (CONUS404) shows that CESM-HR realistically captures cold-season MCS climatology, structure, and precipitation characteristics. In contrast, CONUS404 more faithfully represents warm-season MCS activity. Under future warming, CESM-HR projects an ~41% increase in extreme daily precipitation over global land, substantially larger than the ~26% increase simulated by CESM-LR. Thermodynamical contributions associated with temperature-driven moisture increases are very similar between the two simulations. In contrast, dynamical contributions linked to enhanced MCS activity and convective organization are underestimated by roughly a factor of three in CESM-LR. These results demonstrate that differences in projected extreme precipitation arise primarily from the representation of atmospheric dynamics rather than thermodynamic scaling alone. Even when coarse-resolution models simulate similar warming amplitudes, their inability to capture organized convection leads to substantial underestimation of future precipitation extremes. Our findings underscore the critical importance of high-resolution ESMs for constraining extreme precipitation risks and strengthening confidence in adaptation planning.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">10:40</td>
+      <td class="speaker"><div class="name">Jiang Zhu</div><div class="affil">NSF NCAR</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>More equable past and future warm climates in unprecedented high-resolution simulations</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Jiang Zhu</div>
+            <div class="abstract-text"><p>Understanding Earth’s past warm climates is crucial for improving climate modeling and future projections. We revisit the early Eocene &quot;Equable Climate Problem&quot;, the longstanding mismatch between proxy-inferred weak meridional and seasonal temperature contrasts at ~50 Ma and the steeper gradients simulated by climate models, using one of the first fully coupled, high-resolution (HR) Eocene simulations. Our simulation employs ~10x finer spatial resolution in both the atmosphere and ocean than conventional low-resolution (LR) models at ~1–2°. The HR simulation produces a more equable Eocene climate, with over 5℃ warmer temperatures in continental interiors during winter and oceanic western boundary current regions. These temperatures align closer with paleoclimate proxies, reducing the model-proxy discrepancy by ~20–30% relative to LR simulations. The improvements arise from stronger wintertime atmospheric synoptic- and mesoscale storminess at high latitudes, enhancing atmospheric heat transport and downward cloud longwave radiation, along with differences in oceanic eddy heat transport. Parallel HR simulations of future climate change similarly show additional regional and seasonal warming relative to LR. These findings indicate that traditional LR models may systematically underestimate extreme warming in past and future warm climates, underscoring the need for HR simulations in climate research and projections.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="discussion-row">
+      <td class="time">11:00 – 12:00</td>
+      <td colspan="2"><strong>Discussion: AI/ML, Parameterizations at Higher Resolutions</strong><div class="led-by">Led by Jiwen Fan (Argonne) and Gokhan Dababasoglu (NSF NCAR)</div></td>
+    </tr><tr class="break-row"><td colspan="3"><em>12:00 – 1:30  Lunch</em></td></tr><tr class="session-row"><td colspan="3">Session 7: Model Evaluation and Applications</td></tr>
+    <tr class="talk-row">
+      <td class="time">1:30</td>
+      <td class="speaker"><div class="name">Ruby Leung</div><div class="affil">PNNL</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Analyzing multiple regional and global km-scale models</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Ruby Leung</div>
+            <div class="abstract-text"><p>Analyzing multiple regional and global km-scale models</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">2:00</td>
+      <td class="speaker"><div class="name">Yunyan Zhang</div><div class="affil">LLNL</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Tying in High Resolution E3SM with ARM Data (THREAD) – Project Overview and Recent Progress</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Yunyan Zhang</div>
+            <div class="abstract-text"><p>Tying in High Resolution E3SM with ARM Data (THREAD) is a Science Focus Area project at Lawrence Livermore National Lab, funded by the DOE BER Atmospheric System Research (ASR) program.  It is highly motivated by DOE’s two predominant developments: 1) long term ground-based observational data which has been collected for decades by Atmospheric Radiation Measurement (ARM) program and 2) the global kilometer scale model -- Simplified Could Resolving E3SM Atmospheric Model (SCREAM, Caldwell et al. 2021). ARM samples clouds, aerosols, precipitation, turbulence, atmospheric states, surface fluxes and land properties at very high temporal frequencies, with continuous vertical profiling and additional scanning capabilities in recent years. Such measurements enable us on process-oriented mechanistic understanding of interaction and feedback between land surface, atmospheric boundary layer, clouds and precipitation. At the same time, it presents us a unique opportunity to take advantages of ground-based observations to help validate kilometer scale models, diagnose model biases, and constrain the sub-scale parameterized processes in these models such as boundary layer clouds and their transition into deep convection, and potential scale upgrowth into mesoscale convective systems (MCS).</p><p>In this study, we focus on SCREAM’s performance in representing mesoscale variabilities of convection, such as mixed-phase boundary layer clouds, shallow to deep convection transition, convection aggregation, and their coupling with land surface using data from field campaigns and fixed sites supported by ARM, such GoAmazon, CATCI, COMBLE and SGP. We will demonstrate a pathway how ground-based observations such as ARM data can help with diagnosing model biases such as in SCREAM, establishing case studies for mechanistic understanding, and regulating sensitivity tests of error tracing, with the aids of modeling tools such as large-eddy simulations (LES), doubly periodic SCREAM (DP-SCREAM) and regionally refined SCREAM (RRM-SCREAM).</p><p>This work was performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">2:20</td>
+      <td class="speaker"><div class="name">Youtong Zheng</div><div class="affil">University of Houston</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Simulating Texas Gulf Coast Storms with DOE’s Global Storm-Resolving Model</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Youtong Zheng</div>
+            <div class="abstract-text"><p>This study assesses the capability of the U.S. Department of Energy’s global storm-resolving model, SCREAM, to represent deep moist convection over the Texas Gulf Coast. Combining targeted case studies, month-long simulations, and comparisons with radar and field campaign observations, we examine processes controlling storm evolution and organization in a coastal environment. We focus on several challenges relevant to high-resolution modeling, including the tendency for kilometer-scale simulations to produce isolated “popcorn” convection, the role of sea-breeze circulations in storm triggering, the sensitivity of convection to 3 km versus 500 m grid spacing, and the aerosol invigoration of coastal storms. These results provide observationally constrained insight into the processes that limit the fidelity of kilometer-scale Earth system models and help guide the development of next-generation storm-resolving simulations.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="break-row"><td colspan="3"><em>2:40 – 3:00  Coffee Break</em></td></tr><tr class="session-row"><td colspan="3">Session 8: High and Ultra-High Resolution in the Ocean</td></tr>
+    <tr class="talk-row">
+      <td class="time">3:00</td>
+      <td class="speaker"><div class="name">Fred Castruccio</div><div class="affil">NSF NCAR</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>A More Resilient AMOC with the High-Resolution Configuration of the Community Earth System Model (CESM)</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Fred Castruccio, Gokhan Danabasoglu, Ping Chang, Dan Fu</div>
+            <div class="abstract-text"><p>The Atlantic Meridional Overturning Circulation (AMOC) is critical for northwards heat transport in the Atlantic Ocean. It is projected to weaken and even collapse in Coupled Model Intercomparison Project (CMIP) simulations under an abrupt quadrupling of CO2 (4xCO2). This weakening is linked to increased Arctic warming and subsequent freshwater input into the North Atlantic (NA), which disrupt the density-driven flow in the NA region. It is generally anticipated that with less reliance on uncertain parameterizations and their parameter choices, high-resolution (HR) Earth System Models will represent various processes and coupled interactions of the Earth system with increased fidelity. We have made significant advances in HR Earth system modeling over the past few years. Specifically, we have performed an unprecedented set of simulations at a TC-permitting (0.25°) and ocean-eddy-rich (0.1°) horizontal resolutions using the Community Earth System Model (CESM-HR), including a 4xCO2 simulation and a 1%CO2 simulation. In this presentation, we focus on the impacts of model horizontal resolution on AMOC stability, also considering differences in processes. Specifically, we find that AMOC is more stable in CESM-HR, with some weakening of the AMOC strength. This is in contrast with a corresponding low-resolution (nominal 1°) CESM simulation in which AMOC collapses under an abrupt quadrupling of CO2. This difference in AMOC behavior between these two resolutions has far reaching consequences for regional warming patterns.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">3:20</td>
+      <td class="speaker"><div class="name">C Spencer Jones</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Large-scale patterns in eddies and fronts: challenges in evaluation across scales</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> C Spencer Jones, Ayantika Bhattacharjee, Dhruv Balwada, Shane Elipot, Manuel Gutierrez-Villanueva (and others)</div>
+            <div class="abstract-text"><p>High-resolution ocean and climate models increasingly resolve submesoscale processes, yet evaluating these scales remains a significant challenge. Mesoscale motions at the ocean surface can be evaluated using satellite observations, but at smaller scales geostrophic balance no longer applies. Hence, it is useful to evaluate ocean models against in-situ observations, including ocean surface drifter observations. I will discuss the possibility of simulating ocean drifters online and offline, and present a new method for finding the energy spectrum from unstructured surface drifter observations, enabling easy comparison with gridded model output. Finally, I will show how Joint PDFs of vorticity and strain at the ocean surface can be used to investigate the prevalence of fronts and waves in a high-resolution (nominally 2km) global ocean simulation.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">3:40</td>
+      <td class="speaker"><div class="name">Fucent Hsu</div><div class="affil">UCLA</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Dynamical Downscaling Toward Ultra-High-Resolution Ocean Modeling: Scientific Challenges and Emerging Applications</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Fucent Hsu, Yu-Heng Tseng, Jo-Hsu Huang, Yichun Kuo, James McWilliams, Roy Barkan</div>
+            <div class="abstract-text"><p>Dynamical downscaling of regional ocean models toward ultra-high horizontal resolutions (O(10 m) and finer) is emerging as a critical step for next-generation climate services, particularly in regions where in-situ observations remain sparse and data-driven models remain limited at local scales. At such resolutions, the conventional Reynolds–averaged Navier–Stokes (RANS) framework used in most regional ocean models enters a transitional regime in which turbulent processes previously parameterized, such as mixed-layer convection, begin to be partially resolved. This scale interaction challenges the validity of existing parameterizations, while large-eddy simulation (LES), although more physically consistent, remains computationally prohibitive for regional climate applications. In this talk, we present two hierarchical downscaling frameworks that illustrate both the scientific motivations and emerging applications of ultra-high-resolution ocean modeling. Simulations in the Eastern Mediterranean Sea show that submesoscale dynamics intensify and strongly modulate mixed-layer variability as resolution increases from O(1 km) to O(10 m). A second hierarchy in the Taiwan Strait demonstrates that regional downscaling significantly improves predictive skill at O(1 km) resolution for coastal circulation and extreme events, while further refinement toward O(1 m) resolution provide actionable environmental information for the protection and risk assessment of Underwater Cultural Heritage under future climate scenarios. These examples highlight both the opportunities and the fundamental modeling challenges associated with next-generation ultra-high-resolution ocean simulations.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="discussion-row">
+      <td class="time">4:00 – 5:00</td>
+      <td colspan="2"><strong>Discussion: Future of High and Ultra-High Resolution Modeling</strong><div class="led-by">Led by Yaga Richter (NSF NCAR), Jon Petch (NSF NCAR), Lucas Harris (NOAA GFDL), and Peter Caldwell (LLNL)</div></td>
+    </tr>
+  </table>
+
+  <h2 class="day">Wednesday (April 15)</h2>
+  <table>
+    <colgroup><col class="time-col"><col class="speaker-col"><col class="title-col"></colgroup>
+    <tr class="header-row"><th>Time</th><th>Speaker</th><th>Presentation Title</th></tr>
+    <tr class="session-row"><td colspan="3">Session 9: High-Resolution Coupled Ensembles</td></tr>
+    <tr class="talk-row">
+      <td class="time">9:00</td>
+      <td class="speaker"><div class="name">Ping Chang</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Bridging Low-Resolution CMIP and Storm-Resolving Scales: High-Resolution CESM Climate Simulation Ensembles From MESACLIP</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Ping Chang</div>
+            <div class="abstract-text"><p>Low-resolution (~100 km) CMIP-class models are limited in their ability to explicitly represent mesoscale processes that play a central role in extreme weather and regional climate variability. At the other end of the spectrum, storm-resolving (~1 km) models provide a more realistic representation of mesoscale and convective processes, but their high computational cost has restricted their use in long-term climate simulations and large ensembles that are essential for robust estimates of extreme event statistics. This gap poses a major challenge for understanding and quantifying future climate risks at regional scales.</p><p>This talk will present a suite of high-resolution (~10–25 km) Community Earth System Model (CESM) simulations designed to bridge this gap by combining global coverage with large ensembles of multi-century historical and future simulations, as well as multi-year predictions. These unprecedented simulation ensembles represent a major leap forward in capturing mesoscale phenomena, including mesoscale convective systems in the atmosphere and ocean mesoscale eddies and their associated transports. These improvements not only enhance the mean climate but also lead to a more realistic representation of extreme events, such as extreme precipitation and extreme sea-level rise.</p><p>By comparing high-resolution and low-resolution ensembles, the talk will highlight key differences in the underlying dynamics driving extreme events and large-scale climate trends. The results show that improved representation of atmospheric and oceanic mesoscale dynamics leads to more credible estimates of future climate change and its impact on extremes. The broader value of this class of high-resolution climate models, which more seamlessly connects large-scale climate variability with storm-scale processes, will also be discussed.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">9:30</td>
+      <td class="speaker"><div class="name">Tom Delworth</div><div class="affil">NOAA GFDL</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Development and applications of a high resolution version (1/4 deg atm, 1/12 deg ocn) of GFDL SPEAR</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Thomas L. Delworth, W.F. Cooke, M. Harrison, Y. Joh, A. Rosati, A. Wittenberg, L. Zhang, M. Zhao</div>
+            <div class="abstract-text"><p>We describe the SPEAR suite of model versions at GFDL, which now includes the high-resolution version &quot;SPEAR_HI_8&quot;. This version uses a 25 km atmosphere coupled to a 1/12 degree ocean. The goal of this high-resolution version of SPEAR is to more realistically simulate small scale processes in the climate system that are important both for the overall climate and for simulating extreme events.</p><p>We describe the development of SPEAR_HI_8 within the context of the larger SPEAR suite of model versions that are used for seamless seasonal to decadal predictions and projections. We have conducted a number of multi-century simulations with SPEAR_HI_8 to assess model fidelity and stability. Control simulations using 1990 radiative forcing conditions exhibit stable behavior over centennial scales with net radiative balance and ocean heat uptake within observational estimates. The higher resolution ocean permits a rich structure of smaller scale variability, including mesoscale eddy activity and tropical instability waves. A stable AMOC is simulated, although the strength at 26N (~19 Sv) may be slightly larger than estimated by the RAPID array (17-18 Sv). The Antarctic Circumpolar Current is stable, with a strength of 150-160 Sv. Deep water is formed in the Southern Ocean along the Antarctic shelves with downslope flow to depths greater than 4000m. The model simulated ENSO is stable but with less variability than observed on decadal times scales.</p><p>These resolutions are extremely useful for simulating extreme events. We show two examples: (1) the finer atmospheric resolution allows a much more realistic simulation of Santa Ana winds in Southern California and their potential response to radiative forcing, as well as other aspects of hydroclimate over the western US such as rivers; (2) the finer atmospheric resolution allows more realistic simulation of precipitation extremes, and this may lead to more realistic projections of future changes in precipitation extremes. We present results of studies of extreme precipitation over the eastern US using large ensembles of simulations with the 25 km version of SPEAR.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="break-row"><td colspan="3"><em>10:00 – 10:20  Coffee Break</em></td></tr><tr class="session-row"><td colspan="3">Session 10: Climate Trends</td></tr>
+    <tr class="talk-row">
+      <td class="time">10:20</td>
+      <td class="speaker"><div class="name">Ian Baxter</div><div class="affil">University of Chicago</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Historical trends in regional extratropical cyclones and circulation extremes in high resolution simulations</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Ian Baxter, Tiffany Shaw, Isla Simpson, Pu Lin, Zhihong Tan</div>
+            <div class="abstract-text"><p>In recent years robust atmospheric circulation trends have begun to emerge from the background noise. Two prominent signals that have been identified are a poleward shift of the wintertime jet stream and a weakening of the stormtracks in boreal summer. While lower resolution climate model simulations have shown an ability to broadly capture these changes on hemispheric scales, they struggle to capture the regional patterns and magnitudes of the trends. That may be because these changes in extratropical cyclones are likely the result of finer-scale processes associated with frontal systems and diabatic heating that might be better captured at higher resolutions. Here we evaluate the distributions of sea level pressure and other atmospheric circulation metrics using the recent MESACLIP simulations relative to lower resolution CESM1 Large Ensemble simulations and other higher resolution simulations, including the NOAA GFDL SPEAR Large Ensemble. Our analysis examines a wide range of Eulerian and Lagrangian stormtrack and extratropical cyclone metrics. We find that higher resolution simulations are better able to capture the magnitudes of the shifts in the wintertime stormtracks, especially changes in the tails, that are associated with strong extratropical cyclones, relative to the full distributions. However, MESACLIP produces the opposite sign of extratropical cyclone trends compared to reanalyses and the low resolution simulations in the Northern Hemisphere during boreal summer, which may be related to the use of CMIP5 anthropogenic aerosol emission forcings.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">10:40</td>
+      <td class="speaker"><div class="name">Sieu-Cuong San</div><div class="affil">University of Colorado Boulder</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Anthropogenically Forced Tropical Pacific Cooling via High-Low Latitude Coupling</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Sieu-Cuong San, Pedro DiNezio, Clara Deser, Ping Chang, and Fred Castruccio</div>
+            <div class="abstract-text"><p>The eastern tropical Pacific Ocean has cooled over the past four decades, a trend that most climate models fail to reproduce even when internal variability is considered. This persistent model–observation mismatch obscures the drivers of major climate impacts worldwide and limits our ability to anticipate multi-decadal droughts, hurricane activity, and regional sea-level rise. Here we investigate this discrepancy using an unprecedented ensemble of high-resolution global climate simulations alongside standard-resolution simulations. We find that the high-resolution model produces a substantially stronger forced response, allowing the observed cooling trend to be explained as the combined effect of anthropogenic forcing and natural variability in roughly equal measure. In the simulations – and likely in nature – the stronger forced response arises from amplification by a positive feedback linking the tropical Pacific with the South Pacific. This high–low latitude coupling is weak or absent in standard-resolution models because they poorly represent the seasonal evolution of the Intertropical Convergence Zone. Accurately simulating these interactions requires a realistic representation of the tropical Pacific mean state and ocean mesoscale processes, which emerge only at enhanced atmospheric and oceanic resolution. Our results reveal a clear human contribution to the observed cooling trend, challenging the prevailing view that the recent eastern Pacific cooling is primarily a manifestation of natural variability.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr><tr class="discussion-row">
+      <td class="time">11:00 – 12:00</td>
+      <td colspan="2"><strong>Discussion: Model Intercomparisons &amp; Applications</strong><div class="led-by">Led by Ping Chang (Texas A&amp;M) and Ruby Leung (PNNL)</div></td>
+    </tr><tr class="break-row"><td colspan="3"><em>12:00  End</em></td></tr>
+  </table>
+
+  <h2 class="day">Poster Presenters</h2>
+  <table>
+    <colgroup><col class="time-col"><col class="speaker-col"><col class="title-col"></colgroup>
+    <tr class="header-row"><th>#</th><th>Presenter</th><th>Presentation Title</th></tr>
+    
+    <tr class="talk-row">
+      <td class="time">1</td>
+      <td class="speaker"><div class="name">Nicholas Androski</div><div class="affil">University of Michigan</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>An Intercomparison of Idealized Convective Simulations across CESM3’s Nonhydrostatic Dynamical Cores</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Nicholas H. Androski, Christiane Jablonowski, Nicholas Forcone, John Truesdale, Peter H. Lauritzen, Jian Sun, Mark A. Taylor, and the NSF StormSPEED team</div>
+            <div class="abstract-text"><p>The NSF-funded Storm-Resolving SPEctral Element Dycore (StormSPEED) project for the Community Earth System Model (CESM) has recently added the nonhydrostatic E3SM Spectral Element dynamical core from the U.S. Department of Energy to CESM’s Community Atmosphere Model (CAM). This enhances CESM’s growing suite of global, kilometer-scale configurations that can explicitly model mesoscale phenomena such as Mesoscale Convective Systems (MCSs). Historically, convective processes - now beginning to be resolved at kilometer scales - have been handled with subgrid parameterizations.</p><p>To understand the characteristics of convection in CESM’s nonhydrostatic model configurations, this presentation explores an idealized, reduced-radius, dry and moist test framework to intercompare convective motions among CESM3’s three nonhydrostatic dynamical cores: the StormSPEED Spectral Element configuration, the Model for Prediction Across Scales (MPAS), and NOAA’s finite-volume cubed-sphere (FV3) dynamical core.</p><p>The test framework uses analytic initial conditions. First, a dry rising “Robert bubble” test will be featured, focusing on dry energy conservation and the ability to capture buoyant scaling relationships as grid spacing shrinks. Second, a squall-line test case will be presented using the simple, warm-rain, microphysics scheme proposed by Kessler (1969), as also explored in the Dynamical Core Model Intercomparison Project (DCMIP) in 2025. This squall-line configuration emphasizes the organization of moist convection to produce a propagating, precipitating mesoscale storm system. The presentation will highlight differences and commonalities among CESM3’s nonhydrostatic dynamical cores revealed by this idealized test suite, informing interpretation of full-complexity kilometer-scale simulations in future CESM3 applications.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">2</td>
+      <td class="speaker"><div class="name">Peter Teye Busumprah</div><div class="affil">Ocean Rock Base, Ghana</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Digital Ocean Infrastructures for High and Ultra-High Resolution Modelling of African Coastal and Marine Systems</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Peter Teye Busumprah , Ocean Rock Base , Ghana.</div>
+            <div class="abstract-text"><p>High and ultra-high resolution Earth system modelling is essential for resolving fine-scale oceanographic processes, ecosystem dynamics, and coastal interactions, particularly in regions with complex coastlines and strong climate sensitivity. African marine and coastal systems remain poorly represented in such models due to persistent observational gaps, limited digital infrastructure, and uneven access to ocean technologies.</p><p>This contribution presents the development and deployment of ocean technologies and digital applications within the African Ocean Biodiversity Atlas (AOBA), a UN Ocean Decade–endorsed project coordinated by the Africa Ocean Alliance and led by Ocean Rock Base. The AOBA provides a regionally grounded digital framework that integrates satellite remote sensing, in situ observations, habitat mapping, and biodiversity datasets to support high-resolution representation of African coastal and marine systems.</p><p>We describe technological approaches for data harmonisation, spatial downscaling, and visualisation that enable the Atlas to interface with high and ultra-high-resolution ocean and Earth system models. Particular emphasis is placed on coastal and shelf-scale processes, where fine spatial resolution is critical for capturing ecosystem distribution, blue carbon dynamics, and climate-driven variability. The platform also supports scenario-based applications by linking observational datasets with model outputs, facilitating improved assessment of ecosystem vulnerability and climate impacts.</p><p>By advancing inclusive digital ocean infrastructures and observational–model linkages, the African Ocean Biodiversity Atlas contributes to reducing regional data asymmetries and enhancing the representation of African marine systems in next-generation Earth system models, while supporting the objectives of the UN Decade of Ocean Science for Sustainable Development.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">3</td>
+      <td class="speaker"><div class="name">ZHEAN CHEN</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Recent Past and near-future Changes of Compound Heat-Humidity Extremes  Based on Bias-corrected and Downscaled High-resolution Global Climate Models</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Zhean Chen, Yangyang Xu</div>
+            <div class="abstract-text"><p>As global temperatures rise, understanding the shifting dynamics of extreme heat is critical for climate adaptation and public health. There is a growing recognition that heat stress is strongly modulated by humidity rather than by temperature alone, as high humidity can substantially amplify physiological stress even at moderate temperatures.</p><p>1) This study investigates historical (1975-2025) and projected (2025-2050) changes in humid heatwaves across North and Central America using daily outputs from the high-resolution, bias-corrected NEX-GDDP-CMIP6 (NASA Earth Exchange Global Daily Downscaled Projections) dataset at a 25km grid spacing. We compare heatwaves defined using a variety of heatwave indices based on surface temperature and relative humidity (such as wet-bulb temperature and heat index), thereby enabling a more comprehensive assessment of compound heat-humidity extremes.</p><p>Multiple heatwave characteristics, including frequency, intensity, duration, and cumulative heat, are quantified over the past five decades (since 1975) and up to mid-21st century (∼2050). We place particular emphasis on duration metrics (mean duration and long-lasting heatwave events), given that prolonged, uninterrupted exposure to extreme heat is known to drive the most severe public health impacts and mortality.</p><p>2) Furthermore, this work evaluates the critical role of climate model resolution (0.25º vs. 1 -2º) in representing extreme heat. Previous studies show that current global climate models often exhibit biases in capturing historical heatwave statistics, such as underestimating heatwave frequency. To investigate the influence of spatial scale on these biases, a key component of our research compares high-resolution NEX-GDDP downscaled data with their original low-resolution CMIP6 models.</p><p>We specifically explore whether low-resolution models systematically deplete or artificially smooth out extreme heat conditions due to their inability to resolve localized topographical and land-atmosphere feedback. By highlighting the disparities between high- and low-resolution model outputs, this study underscores the necessity of high- and ultra-high-resolution modeling to accurately capture localized extreme heat conditions.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">4</td>
+      <td class="speaker"><div class="name">Abhijit Das</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Exploring Drought-Induced Land Surface Changes and Dust Emission Using a High-Resolution Regional Climate Model with an Interactive Vegetation Scheme</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Abhijit Das; Yangyang Xu</div>
+            <div class="abstract-text"><p>Interactions between soil moisture, vegetation cover, and atmospheric processes strongly influence drought onset and development at the seasonal timescale. As soil moisture declines, vegetation experiences water stress, and canopy cover can decrease, altering surface energy fluxes, roughness, and soil stability. These land surface changes can reinforce drought conditions through land–atmosphere feedbacks while also increasing the susceptibility of exposed soils to wind erosion and dust emission. Despite their importance, the coupled role of soil moisture–vegetation dynamics in drought initiation and propagation, and the associated land surface response, is not fully represented in many regional climate modeling studies.</p><p>This work investigates the role of soil moisture–vegetation feedbacks in drought propagation using high-resolution simulations with the Weather Research and Forecasting model coupled with chemistry (WRF-Chem). The model is configured at 9 km horizontal resolution over a domain covering the south-central United States and northern Mexico, including the Southern Plains and adjacent Gulf Coast region, and further enhanced to 1.8 km over Texas. Land surface processes are represented using the Noah-MP land surface model with dynamic vegetation, allowing soil moisture stress to influence vegetation conditions and surface energy and water fluxes, including latent and sensible heat exchange with the atmosphere.</p><p>The simulations are designed to examine how variations in soil moisture availability and vegetation cover modify land–atmosphere coupling during historical drought seasons. Particular attention is given to how these land surface changes influence surface erodibility and the environmental conditions that favor dust emission. By explicitly linking soil moisture–vegetation feedbacks to drought evolution and land surface dust emission processes, this work aims to improve understanding of how land surface dynamics influence atmospheric composition and regional climate. The high-resolution modeling framework provides a pathway toward improved representation of drought–land–atmosphere coupling in regional climate and Earth system models, which is essential for predicting environmental impacts over regions with high drought frequency and intensity.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">5</td>
+      <td class="speaker"><div class="name">Hsin-Chien Liang</div><div class="affil">Academia Sinica, Taiwan</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Application of TaiESM1 to High-resolution Simulations</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Hsin-Chien Liang, Wei-Liang Lee, Yu-Len Chen, Chien-Ying Wu and Huang-Hsiung Hsu</div>
+            <div class="abstract-text"><p>A high-resolution version of Taiwan Earth System Model version 1 (TaiESM1-HR) has been developed to explicitly simulate small-scale weather extremes with full atmosphere–ocean interactions. Two long-term coupled simulations were conducted using TaiESM1at a 25-km atmospheric resolution, paired with ocean resolutions of 10-km (HAHO) and 100-km (HALO), under the greenhouse gas concentrations and aerosol emissions representative of the year 2000. Results show that both fully-coupled TaiESM1-HR better simulate  tropical cyclones (TCs) activities in the Northwestern Pacific (NWP) — in terms of frequency and seasonal cycle — compared to TaiESM1-HR with prescribed SST. Further analysis suggests that  warmer SST in the western Pacific and a weaker subtropical Pacific High in the coupled  runs are likely the contributing factors. Over the Atlantic, however, the performance of TCs over the Atlantic is degraded: TCs almost disappear off the coast of the western Africa, likely due to strong cold SST biases in HALO. For extreme precipitation in the NWP region, both HALO and HAHO realistically reproduce the spatial distribution over land, but underestimate precipitation intensity over the ocean. Compared to HALO, HAHO produces excessive light precipitation over the ocean, potentially related to enhanced mesoscale eddy activity associated with the higher ocean model resolution. Finally, although the amplitude of ENSO is comparable to that of the standard TaiESM1 (100-km ATM and 100-km OCN) in HALO, it is substantially weaker in HAHO.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">6</td>
+      <td class="speaker"><div class="name">Xue Liu</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Exploring the Role of Southern Hemisphere Ozone Depletion in Southern Ocean and Tropical Cooling Trends in High-Resolution CESM Historical Simulations</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Xue Liu, Ping Chang, Frederic S. Castruccio, Travis Prochko, Dan Fu, Gokhan Danabasoglu, et al</div>
+            <div class="abstract-text"><p>Using a high-resolution CESM historical ensemble simulation, we examine how Antarctic stratospheric ozone depletion influences the climate trends in the Southern Ocean (SO) and the tropics. The historical simulation capture cooling in both regions, while an ozone withholding ensemble simulation, in which Antarctic stratospheric ozone is fixed at its 1970 level, shows a weaker SO cooling and no tropical cooling. These results indicate that ozone depletion plays a crucial role in initiating both local SO response and the remote tropical response.</p><p>Further analyses reveal a two-stage evolution. During the initial stage from 1970-2000 when ozone depletion is strongest, pronounced stratospheric cooling is accompanied by an intensification of the upper-level winds over SO. A stationary Rossby wave pattern emerges over the Pacific sector, providing a dynamical linkage between the SO and tropics. Despite these atmospheric changes, SST and surface winds remain largely unchanged. In the later stage from 1980 to 2010, a pronounced SO surface cooling develops, together with a strengthening of the westerlies that extends into the upper atmosphere. A tropical cooling trend also emerges during this period, pointing to the role of ocean–atmosphere coupling in amplifying and sustaining the response.</p><p>Overall, these results suggest that ozone forcing initiates the cooling, while coupled atmosphere-ocean feedbacks and SO-tropics interactions amplify and maintain the response. Ongoing analyses aim to quantify the relative contributions of these processes.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">7</td>
+      <td class="speaker"><div class="name">Lixin Lu</div><div class="affil">Colorado State University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>HIGH RESOLUTION (1-KM) SIMULATION OF LEAF AREA INDEX AT SUB-SEASONAL TO SEASONAL FOR EARTH SYSTEM MODEL USING AI/MACHINE LEARNING</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Lixin Lu, Zhixing Ruan, Yu Zhang</div>
+            <div class="abstract-text"><p>Modeling vegetation phenology within Earth system models remains challenging due to its interannual variability, spatial heterogeneity, and complex ecosystem dynamics. Current dynamic vegetation (DV) models are driven by complex ecological processes of vegetation growth and decay, carbon and nutrient cycling, ecosystem disturbances, and weather and climate. However, integrating these DV models into operational climate prediction systems remains difficult. Consequently, many climate models prescribe Leaf Area Index (LAI) distributions using a 20-year averaged climatology derived from the Normalized Difference Vegetation Index, which limits the model’s capability to respond to sub-seasonal to seasonal and interannual climate variations.</p><p>To address this issue, we developed a machine learning-based model, ConvLSTM-LAI, which leverages Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) techniques to improve regional-scale predictions of LAI. The model is trained using long-term precipitation and temperature data from the NCDC Summary of the Day station observations, along with the Moderate Resolution Imaging Spectroradiometer (MODIS) LAI product (MCD15A3H) which was interpolated to a daily time step. ConvLSTM-LAI model is trained with daily LAI values and surface meteorological forcings at a 1-km spatial resolution to predict LAI across south-central United States. Using data from 2001 to 2020 for training, we evaluate predictions from 2021 to 2023 against MODIS LAI observations. Results show that with a lead time of 30 days, the predicted domain-averaged LAI values differ by less than 0.11 from observed values, with a correlation coefficient of 0.86, effectively capturing both seasonal and interannual variations in vegetation dynamics. Additionally, regional LAI predictions exhibit strong performance across different land cover types, including grasslands, savannas, shrublands, croplands, and mixed forests. Furthermore, model evaluation across lead times from 1 to 30 days reveals that as lead time increases, RMSE rises and correlation decreases, underscoring the difficulty of making long-term predictions for complex vegetation dynamics.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">8</td>
+      <td class="speaker"><div class="name">Travis Prochko</div><div class="affil">Texas A&amp;M University</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Drivers of Southern Ocean and Tropical Pacific Cooling in CESM-HR (MESACLIP)</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Travis Prochko, Xue Liu, Qiuying Zhang, Ping Chang, Frederic Castruccio, Gokhan Danabasoglu, Stephen Yeager</div>
+            <div class="abstract-text"><p>Southern Ocean and Tropical Pacific SST cooling trends observed in the past four decades (~1980-2020) are simulated to some extent by MESACLIP&#x27;s high-resolution 10-member ensemble (CESM-HR) utilizing the historical and RCP8.5 simulations. While many theories have been presented to explain the mechanisms responsible for the cooling trends, we present preliminary evidence for two separate drivers of decadal variability associated with Southern Ocean and Tropical Pacific in CESM-HR: 1. an underlying coupled internal variability driven by polynas in the Weddell Sea which triggers the Interdecadal Pacific Oscillation (IPO) and Pacific ocean cooling and warming and 2. ozone depletion from 1970 to the mid-1990s which drives westerly intensification, Ekman upwelling, and Southern Ocean cooling. We also present a discussion of the relative contributions of each mechanism to recent Southern Ocean and Tropical Pacific cooling trends.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">9</td>
+      <td class="speaker"><div class="name">Chia-Ying Tu</div><div class="affil">Academia Sinica, Taiwan</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Refined Vertical Discretization of TaiESM for Improving Diurnal SST</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Chia-Ying Tu</div>
+            <div class="abstract-text"><p>The traditional coupling method between AGCM and OGCM relies on the coupler, where the atmosphere and ocean are computed separately between each coupling step, with surface flux exchanges occurring during the coupling process. However, the commonly used daily coupling frequency in climate models fails to capture the diurnal variation of sea surface temperature (SST), leading to an unrealistic representation of temperature diurnal variation in the lower atmosphere and disrupting the normal presentation of diurnal rainfall patterns. This study presents a novel coupling approach for AGCM, OGCM, and a one-dimensional ocean model using TaiESM1 (Taiwan Earth System Model Version 1) coupled with SIT (Snow/Ice/Thermocline) one-dimensional ocean model. In this approach, TaiESM1&#x27;s atmospheric model, TaiCAM, couples with SIT at each timestep to better account for air-sea interactions, while SIT and TaiESM1&#x27;s ocean model, POP2, exchange oceanic information once daily through the coupler.</p><p>The TaiESM1-SIT climate integrations demonstrate that this new coupling method considers high-frequency air-sea interactions while preserving the dynamic and circulation fields of the ocean model, leading to improved SST and diurnal rainfall patterns and indirectly enhancing the eastward propagation of the Madden-Julian Oscillation (MJO). This study further utilizes TaiESM1-SIT to simulate the MJO during the DYNAMO period and compares the simulated diurnal warm layer with observations. The TaiESM1-SIT experiment shows improved MJO simulation during the DYNAMO period, with the better simulated diurnal warm layer and SST anomaly, whereas the TaiESM1 control experiment demonstrates lower skill in simulating the MJO. A comparison between the TaiESM1 and TaiESM1-SIT experiments suggests that the improved MJO simulation is primarily due to the better representation of the SST diurnal cycle and amplitude, which is contributed by the refined vertical resolution near the ocean surface in SIT.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">10</td>
+      <td class="speaker"><div class="name">Kristen Wilson</div><div class="affil">University of Texas at Arlington</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Modelling Marine Bacterially Mediated Carbon Sequestration in a Hothouse Climate Using CESM2.1</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Kristen Wilson</div>
+            <div class="abstract-text"><p>Marine heterotrophic bacteria play a critical role in carbon cycling, yet their response to environmental changes from climate change and their integration into global models remains uncertain. Dissolved organic carbon (DOC) is of importance for CO2 sequestration and is seen as one of the Earth’s largest reservoirs for bioactive and exchangeable carbon. It consists in forms of semi-labile DOC (DOCsl), semi-refractory DOC (DOCsr), and refractory DOC (DOCr). The study aims to improve predictions of DOC abundance, with implications for understanding how particle flux and environmental changes affect deep-sea ecosystem functioning, and thereby the sequestration pathway of carbon as DOCr mediated by the microbial loop. A simple, offline model was created to simulate the microbial loop’s (ML) bacterial biomass and DOCsl concentrations, along with bacterial production, uptake, mortality, and DOCr production rates. This model was initialized by a 100-year, moderate-resolution CESM2.1 case with marine biogeochemical cycling activated and preindustrial atmospheric forcings. Climate sensitivity was investigated by initializing the model with temperature profiles from the Latest Paleocene and Paleocene-Eocene Thermal Maximum and estimates of the decreases in the flux of particulate organic carbon (POC), allowing for the assessment of how the ML’s carbon sequestration rates would be altered under various hothouse climate scenarios. The combined sensitivity tests highlighted the importance of constraining the mortality constant to the POC gradient and the temperature dependence factor. Results indicate that increased temperature increases bacterial growth efficiency, production, mortality and bacterial DOCr formation, thereby enhancing carbon sequestration under warmer conditions – even in conjunction with estimated decreases in the POC flux. Our results underscore the need to incorporate microbial processes into Earth system models to improve predictions of ocean carbon storage going into the warmer future.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">11</td>
+      <td class="speaker"><div class="name">Wandi Yu</div><div class="affil">LLNL</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>QBO wave forcing in the storm-resolving configuration of E3SM</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Wandi Yu, Walter Hannah, James Benedict</div>
+            <div class="abstract-text"><p>The Quasi-Biennial Oscillation (QBO) is a reversal of tropical stratospheric zonal winds with a period of about 20 to 34 months, characterized by alternating easterly and westerly regimes that propagate downward. The QBO is known to influence the Madden–Julian Oscillation, tropical precipitation, and many dynamical and chemical processes in the stratosphere including Sudden Stratospheric warming (SSW) events. Its formation arises from complex wave–mean flow interactions involving a broad spectrum of equatorial waves. Simulating the QBO realistically has long been a challenge for Earth system models. In many models, the QBO is produced through a combination of resolved and parameterized gravity waves. This study analyzes the QBO simulated in a storm-resolving configuration of the DOE E3SM model using a horizontal resolution of approximately 13 km. In this configuration, the parameterizations that are used to represent deep convection and convective gravity wave generation in coarser E3SM versions are disabled, allowing the QBO to be driven only by resolved wave forcing. The simulated QBO exhibits a much shorter period, about 12 months. However, unlike many lower-resolution models in which the QBO signal often fails to propagate below 50 hPa, the oscillation extends down to about 100 hPa. Here we analyze the contributions of planetary-scale and convective-scale gravity waves to the simulated QBO during each phase. This work provides a baseline diagnostic evaluation and offers insight into how high-resolution models represent QBO dynamics and their associated teleconnections.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+    <tr class="talk-row">
+      <td class="time">12</td>
+      <td class="speaker"><div class="name">Zhe Zhang</div><div class="affil">NSF NCAR</div></td>
+      <td class="title-cell">
+        <details>
+          <summary>Subseasonal Prediction at the km-Scale: The 2015 Texas Extreme Rainfall Event</summary>
+          <div class="abstract-box">
+            <div class="authors"><strong>Authors:</strong> Zhe Zhang, Cenlin He, Abby Jaye, Judith Berner, Michael Barlage, Meg Fowler, Yaga Richter, Zong-Liang Yang</div>
+            <div class="abstract-text"><p>Severe convective storms (SCS) represent a formidable challenge to subseasonal-to-seasonal (S2S) predictability and societal resilience. Supported by the NCAR Earth System Predictability Across Timescales (ESPAT) initiative, this study investigates the predictability of the record-breaking May 2015 Texas–Oklahoma &quot;flood-drought whiplash&quot;—an extreme rainfall event that abruptly terminated a multi-year drought. We present a pioneering S2S framework utilizing kilometer-scale regional refinement to bridge the gap between global climate modeling and convective-scale processes.</p><p>We evaluate the MPAS-NoahMP S2S system across three global configurations: a 60-km uniform mesh and two regionally refined meshes centered over the U.S. at 15-km and 4-km (convection-permitting) resolutions. Forecasts are initialized weekly, with land-surface states provided by a dedicated Noah-MP offline spin-up. At a 1-week lead time, ensemble forecasts demonstrate high fidelity in capturing the timing and spatial distribution of precipitation anomalies. At 2- to 3-week leads, the model maintains a persistent wet signal, though with reduced magnitude and increased ensemble spread—a critical indicator of forecast uncertainty for high-impact events.</p><p>Furthermore, we quantify the added value of kilometer-scale refinement in representing extreme precipitation distributions, diurnal cycles, and land–atmosphere feedbacks. Notably, while 60-km and 15-km configurations significantly underestimate hourly precipitation intensity at a 4-week lead time, the 4-km refinement reasonably captures the intensity and storm propagation observed in Stage IV precipitation product. This work demonstrates the transformative potential of convection-permitting S2S forecasts in translating probabilistic guidance into actionable intelligence for stakeholders navigating increasingly volatile weather regimes.</p></div>
+          </div>
+        </details>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
